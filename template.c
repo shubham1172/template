@@ -1,8 +1,16 @@
+/**
+* @author: Shubham Sharma
+* @ver 0.1
+* 
+* A utility file to create templates on the go for your favorite programming languages.
+* Useful for writing tests where you don't have to create the basic template again and again.
+*/
+
 #include<stdio.h>
 #include<string.h>	
 #include<stdlib.h>
-#include <sys/types.h>
-#include <sys/stat.h>
+#include<sys/types.h>
+#include<sys/stat.h>
 
 char *template;	//stores the template to be displayed
 char *command;	//stores the command to be executed
@@ -12,10 +20,10 @@ char *filename; //stores the filename of the file with path
 void help(){
 	template =  "template\n\n"
 			    "v0.1\n"
-				"syntax: template [type] [filename] -o\n"
+				"syntax: template [type] [filename] [-o]\n"
 				"type: html, js, c, java \n"
 				"filename: output file name (by default it is printed to stdout)\n"
-				"-o: opens the file in vim\n"
+				"-o: opens the file in gedit\n"
 				"developed by 1172 www.github.com/shubham1172\n";
 	printf("%s", template);
 }
