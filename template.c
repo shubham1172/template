@@ -12,9 +12,9 @@
 #include<sys/types.h>
 #include<sys/stat.h>
 
-char *template;	//stores the template to be displayed
-char *command;	//stores the command to be executed
-char *filename; //stores the filename of the file with path
+char *template;	//points to the template to be displayed
+char *command;	//points to the command to be executed
+char *filename; //points to the filename of the file with path
 
 //displays help
 void help(){
@@ -99,6 +99,21 @@ void java(){
 				"		System.out.println(\"Hello, world!\").\n"
 				"	}\n"
 				"}\n";
+}
+
+//template for C++
+void cpp(){
+	template = "//Header files\n"
+			"#include<iostream>\n"
+			"#include<conio.h>\n\n"
+		   "//standard declaration\n"
+			"using namespace std;\n\n"
+		   "//main function\n"
+			"int main()/n{"
+			"	cout<<\"Hello world!\";\n"
+			"	getch();\n"
+			"	return 0;\n"
+			"}\n";
 }
 
 int main(int argc, char* argv[]){
