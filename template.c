@@ -22,7 +22,7 @@ void help(){
 	template =  "template\n\n"
 			    "v0.1\n"
 				"syntax: template [type] [filename] [-o]\n"
-				"type: html, js, c, java \n"
+				"type: html, js, c, java, cpp \n"
 				"filename: output file name (by default it is printed to stdout)\n"
 				"-o: opens the file in gedit\n"
 				"developed by 1172 www.github.com/shubham1172\n";
@@ -128,7 +128,10 @@ int main(int argc, char* argv[]){
 			c();
 		}else if(strcmp(argv[1], "js")==0||strcmp(argv[1], "JS")==0){
 			js();
-		}else
+		}else if(strcmp(argv[1], "cpp")==0||strcmp(argv[1], "CPP")==0){
+			cpp();
+		}
+		else
 			flag = 0;
 		if(flag&&argc==2)
 			print();
