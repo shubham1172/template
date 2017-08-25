@@ -4,6 +4,7 @@
 * 
 * A utility file to create templates on the go for your favorite programming languages.
 * Useful for writing tests where you don't have to create the basic template again and again.
+* Thanks to anujanegi for contribution
 */
 
 #include<stdio.h>
@@ -12,9 +13,9 @@
 #include<sys/types.h>
 #include<sys/stat.h>
 
-char *template;	//points to the template to be displayed
-char *command;	//points to the command to be executed
-char *filename; //points to the filename of the file with path
+char *template;	//template to be displayed
+char *command;	//command to be executed
+char *filename; //filename of the file with path
 
 //displays help
 void help(){
@@ -104,16 +105,16 @@ void java(){
 //template for C++
 void cpp(){
 	template = "//Header files\n"
-			"#include<iostream>\n"
-			"#include<conio.h>\n\n"
-		   "//standard declaration\n"
-			"using namespace std;\n\n"
-		   "//main function\n"
-			"int main()/n{"
-			"	cout<<\"Hello world!\";\n"
-			"	getch();\n"
-			"	return 0;\n"
-			"}\n";
+				"#include<iostream>\n"
+				"#include<conio.h>\n\n"
+		   		"//standard declaration\n"
+				"using namespace std;\n\n"
+				"//main function\n"
+				"int main()/n{"
+				"	cout<<\"Hello world!\";\n"
+				"	getch();\n"
+				"	return 0;\n"
+				"}\n";
 }
 
 int main(int argc, char* argv[]){
