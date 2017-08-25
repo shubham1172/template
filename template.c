@@ -110,7 +110,7 @@ void cpp(){
 		   		"//standard declaration\n"
 				"using namespace std;\n\n"
 				"//main function\n"
-				"int main()/n{"
+				"int main()\n{"
 				"	cout<<\"Hello world!\";\n"
 				"	getch();\n"
 				"	return 0;\n"
