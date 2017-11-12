@@ -21,7 +21,8 @@ char *filename; //filename of the file with path
 void help(){
 	template =  "template\n\n"
 			    "v0.1\n"
-				"syntax: template [type] [filename] [-o]\n"
+				"syntax: template [type] [filename]* [-o]*\n"
+				"(* is optional)\n"
 				"type: html, js, c, java, cpp \n"
 				"filename: output file name (by default it is printed to stdout)\n"
 				"-o: opens the file in gedit\n"
