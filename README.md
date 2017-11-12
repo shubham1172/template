@@ -4,11 +4,11 @@
 A Linux utility to provide boilerplate code for common languages. Handy for quickly firing up some basic syntax and start coding.
 
 ## Usage
-syntax: template [type] [filename]* [-o]*
-(* is optional)
-type: html, js, c, java, cpp
-filename: output file name (by default it is printed to stdout)
--o: opens the file in gedit
+syntax: template [type] [filename]* [-o]* <br>
+(* is optional) <br>
+type: html, js, c, java, cpp <br>
+filename: output file name (by default it is printed to stdout) <br>
+-o: opens the file in gedit <br>
 
 Example: 
 `$ template html index.html -o`
